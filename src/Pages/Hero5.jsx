@@ -5,6 +5,7 @@ import { data } from "../data/data";
 const Hero5 = () => {
   return (
     <div className="min-h-screen bg-[#65C322]/7 flex flex-col justify-center items-center p-5   ">
+        <div className="w-[1200px]  h-auto flex flex-col justify-center items-center">
       <button className="bg-white text-[#65C322] w-[168px] h-[40px] rounded-[150px] border border-[#65C322] mt-[62px]">
         COMMUNITY HUB
       </button>
@@ -38,42 +39,75 @@ const Hero5 = () => {
         </div>
         </div>
 
-        <div className="flex flex-wrap justify-between space-y-5 mt-[50px]">
-            {data.map((card,indx)=> (
+        <div className="flex flex-wrap gap-8 justify-around mt-10">
+            {data.map((card,idx)=>(
 
-            <div className="w-[430px] h-[280px] bg-white rounded-[15px] border border-[#65C322] p-5 px-10">
-
-                <div className="flex gap-[10px]">
-                    <div className="w-[55px] h-[55px] border border-[#65C322] flex rounded-full justify-center items-center ">
-                    <img src="/images/face1.png" alt="" className="w-[47px] h-[47px]" />
-                    </div>
-                    <h1 className="font-semibold text-[18px]">{card.title}</h1>
-                </div>
-
-                <div className="flex mt-[10px] gap-2">
-                    <span className="font-medium text-[16px] text-[#1E304A]">{card.author}</span>
+            <div className="bg-white w-[375px] h-[250px] rounded-[15px] p-5">
+              <div className="flex gap-[10px]">
+                  <div className="w-[50px] h-[50px] border border-[#65C322] flex rounded-full justify-center items-center ">
+                   <img src={card.avatar_image} alt="" className="w-[45px] h-[45px] shrink-0" />
+                     </div>
+                     <h1 className="font-semibold text-[15px]">{card.title}</h1>
+               </div>
+               <div className="flex mt-[10px] gap-2 items-center">
+                 <span className="font-medium text-[14px] text-[#1E304A]">{card.author}</span>
                     <span className="flex justify-center items-center" > <CircleSmall size={10} /> {card.role}</span>
-                    <span className="flex justify-center items-center"> <CircleSmall size={10} /> {card.time_ago}   </span>
-                </div> 
+                     <span className="flex justify-center items-center"> <CircleSmall size={10} /> {card.time_ago}   </span>
+                 </div> 
+                 <div className="mt-[20px] flex gap-[10px]">
+                  <button className="w-[125px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[0]}</button>
+                     <button className="w-[159px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[1]}</button>
 
-                <div className="mt-[20px] flex gap-[10px]">
-                    <button className="w-[125px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[0]}</button>
-                    <button className="w-[159px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[1]}</button>
-
-                </div>
-
-                <div className="flex gap-5 mt-15">
+                 </div>
+                  <div className="flex gap-5 mt-15">
                     <span className="text-[#1E304A] flex gap-1"><MessageCircle className="text-[#2F3542]" />{card.comments}</span>
-                    <span className="flex gap-1"><Eye />{card.views}</span>
-                </div>
+                  <span className="flex gap-1"><Eye />{card.views}</span>
+             </div>
 
             </div>
             ))}
         </div>
 
-        <span className="flex gap-2 text-[#053374] text-[16px] mt-[40px]">View All Discussions <ArrowRight /></span>
+   
+
+        <span className="flex gap-2 text-[#053374] text-[16px] mt-[40px] justify-center">View All Discussions <ArrowRight /></span>
+        </div>
     </div>
   );
 };
 
 export default Hero5;
+
+
+    //  <div className="flex flex-wrap justify-between space-y-5 mt-[50px]">
+    //         {data.map((card,indx)=> (
+
+    //         <div key={indx} className="w-[430px] h-[280px] bg-white rounded-[15px] border border-[#65C322] p-5 px-10">
+
+    //             <div className="flex gap-[10px]">
+    //                 <div className="w-[55px] h-[55px] border border-[#65C322] flex rounded-full justify-center items-center ">
+    //                 <img src="/images/face1.png" alt="" className="w-[47px] h-[47px]" />
+    //                 </div>
+    //                 <h1 className="font-semibold text-[18px]">{card.title}</h1>
+    //             </div>
+
+    //             <div className="flex mt-[10px] gap-2">
+    //                 <span className="font-medium text-[16px] text-[#1E304A]">{card.author}</span>
+    //                 <span className="flex justify-center items-center" > <CircleSmall size={10} /> {card.role}</span>
+    //                 <span className="flex justify-center items-center"> <CircleSmall size={10} /> {card.time_ago}   </span>
+    //             </div> 
+
+    //             <div className="mt-[20px] flex gap-[10px]">
+    //                 <button className="w-[125px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[0]}</button>
+    //                 <button className="w-[159px] h-[34px] bg-[#E2EEF9] rounded-[150px] text-[#2F3542]">{card.tags[1]}</button>
+
+    //             </div>
+
+    //             <div className="flex gap-5 mt-15">
+    //                 <span className="text-[#1E304A] flex gap-1"><MessageCircle className="text-[#2F3542]" />{card.comments}</span>
+    //                 <span className="flex gap-1"><Eye />{card.views}</span>
+    //             </div>
+
+    //         </div>
+    //         ))}
+    //     </div>

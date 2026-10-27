@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* lower  */}
-          <div className="flex justify-between items-center">
+          <div className="flex gap-10 items-center">
             <div>
               <h1 className="font-bold text-[45px]">
                 Raise Smart. Grow Fast. <br />
@@ -60,6 +60,7 @@ const Footer = () => {
                 </button>
               </form>
             </div>
+            
 
             <div>
               <h1 className="font-bold text-[22px]">Research</h1>

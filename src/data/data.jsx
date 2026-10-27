@@ -5,7 +5,7 @@ export const data = [
     "author": "Dr. Sarah Chen",
     "role": "Lead Researcher",
     "time_ago": "2h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c1.png",
     "tags": ["Formulation", "Delivery System"],
     "comments": 20,
     "views": 150
@@ -16,7 +16,7 @@ export const data = [
     "author": "James Wilson",
     "role": "Regulatory Affairs",
     "time_ago": "5h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c2.png",
     "tags": ["Regulatory", "Compliance"],
     "comments": 20,
     "views": 150
@@ -27,7 +27,7 @@ export const data = [
     "author": "Maria Garcia",
     "role": "Biochemist",
     "time_ago": "2h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c3.png",
     "tags": ["Purification", "Methodology"],
     "comments": 20,
     "views": 150
@@ -38,7 +38,7 @@ export const data = [
     "author": "Dr. Sarah Chen",
     "role": "Lead Researcher",
     "time_ago": "2h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c1.png",
     "tags": ["Formulation", "Delivery System"],
     "comments": 20,
     "views": 150
@@ -49,7 +49,7 @@ export const data = [
     "author": "James Wilson",
     "role": "Regulatory Affairs",
     "time_ago": "5h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c2.png",
     "tags": ["Regulatory", "Compliance"],
     "comments": 20,
     "views": 150
@@ -60,7 +60,7 @@ export const data = [
     "author": "Maria Garcia",
     "role": "Biochemist",
     "time_ago": "2h ago",
-    "avatar_image": "https://via.placeholder.com/35x45.png?text=Passport+Photo",
+    "avatar_image": "/images/c3.png",
     "tags": ["Purification", "Methodology"],
     "comments": 20,
     "views": 150
