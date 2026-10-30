@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="bg-[#094292] w-[1200px] h-[564px] flex flex-col justify-center p-10">
           {/* upper  */}
 
-          <div className="flex justify-between">
-            <div className="w-[400px]">
+          <div className="flex justify-between ">
+            <div className="w-[400px] ">
               <h1 className="font-bold text-[26px]">AlterRNA </h1>
               <p className="text-[16px] font-medium">
                 Advancing RNA therapeutics through global collaboration, making
@@ -41,8 +41,8 @@ const Footer = () => {
           </div>
 
           {/* lower  */}
-          <div className="flex gap-10 items-center">
-            <div>
+          <div className="flex gap-10 items-center ">
+            <div >
               <h1 className="font-bold text-[45px]">
                 Raise Smart. Grow Fast. <br />
                 Let’s Start Today!
@@ -73,7 +73,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="absolute right-22">
               <h1 className="font-bold text-[22px]">Contact</h1>
 
               <span className="flex gap-2">
@@ -82,7 +82,7 @@ const Footer = () => {
               </span>
               <span className="flex gap-2 text-left">
                 <MapPin />
-                100 Innovation Way, Cambridge, <br /> MA 02142
+                100 Innovation Way, <br /> Cambridge,  MA 02142
               </span>
               <span className="flex gap-2">
                 <Mail />

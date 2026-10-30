@@ -1,6 +1,6 @@
 import { ArrowRight, CircleSmall, Eye, MessageCircle, Search, SlidersHorizontal } from "lucide-react";
 import React from "react";
-import { data } from "../data/data";
+import { data } from "../../data/data";
 
 const Hero5 = () => {
   return (
